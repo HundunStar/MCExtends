@@ -1,11 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Stellar by HTML5 UP</title>
@@ -53,7 +48,7 @@
 										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
 										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+											<li><a href="generic.jsp" class="button">Learn More</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
@@ -84,7 +79,7 @@
 								</ul>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="generic.jsp" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -121,7 +116,7 @@
 								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="generic.jsp" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -135,8 +130,8 @@
 								</header>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="generic.html" class="button special">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="generic.jsp" class="button special">Get Started</a></li>
+										<li><a href="generic.jsp" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -149,7 +144,7 @@
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
+								<li><a href="generic.jsp" class="button">Learn More</a></li>
 							</ul>
 						</section>
 						<section>
