@@ -20,10 +20,8 @@ namespace MCExtendsServer
         private const int BufferSize = 8192;
         private byte[] buffer;
         private RequestHandler handler;
-        public delegate void DlgShowMsg(string Msg);
+        public delegate void DlgShowMsg(RemoteClient client,string Msg);
         DlgShowMsg Dsm;
-        public delegate void DlgIDChanged(object sender, ClientIDEventArgs e);
-        public event DlgIDChanged OnClientIDChanged;
         /// <summary>
         /// 初始化包装TCP通信的远程客户端
         /// </summary>
@@ -35,7 +33,7 @@ namespace MCExtendsServer
             this.client = client;
             this.Dsm = Dsm;
             // 打印连接到的客户端信息
-            Dsm(string.Format("\nClient Connected！{0} <-- {1}",
+            Dsm(this,string.Format("获取到来自客户端的连接！{0} <-- {1}",
                 client.Client.LocalEndPoint, client.Client.RemoteEndPoint));
 
             // 获得流
@@ -73,16 +71,15 @@ namespace MCExtendsServer
                 // 遍历获得到的字符串
                 foreach (string s in msgArray) 
                 {
-                    string pattern = @"(?<=^\[ID=)(\d+)(?=\])";
-                    if (Regex.IsMatch(s, pattern))
-                    {
-                        Match m = Regex.Match(s, pattern);
-                        ClientID = m.ToString();
-                        if (OnClientIDChanged != null)
-                            OnClientIDChanged(this, new ClientIDEventArgs(ClientID));
-                        //一个客户端上线了，则服务端从消息队列中查找是否有此客户端应该要接受的消息，如有，则进行发送，使用回调函数进行处理
-                        //在下面的onRecieveMessage函数调用中通过回调函数来进行发送
-                    }
+                    //string pattern = @"(?<=^\[ID=)(\d+)(?=\])";
+                    //if (Regex.IsMatch(s, pattern))
+                    //{
+                    //    Match m = Regex.Match(s, pattern);
+                    //    ClientID = m.ToString();
+                    //   // OnClientIDChanged?.Invoke(this, new ClientIDEventArgs(ClientID));
+                    //    //一个客户端上线了，则服务端从消息队列中查找是否有此客户端应该要接受的消息，如有，则进行发送，使用回调函数进行处理
+                    //    //在下面的onRecieveMessage函数调用中通过回调函数来进行发送
+                    //}
                     
                     onRecieveMessage(s);
                 }
@@ -98,7 +95,7 @@ namespace MCExtendsServer
                     streamToClient.Dispose();
                 client.Close();
                 //MessageBox.Show(ex.Message);
-                Dsm(ex.Message);      // 捕获异常时退出程序              
+                Dsm(this,ex.Message);      // 捕获异常时退出程序              
             }
         }
 
@@ -120,16 +117,8 @@ namespace MCExtendsServer
         }
         private void onRecieveMessage(string msg)
         {
-            Dsm(msg);
+            Dsm(this,msg);
             //Program.MainForm.ShowMessage(msg);
-        }
-    }
-    public class ClientIDEventArgs : EventArgs
-    {
-        public string ClientID;
-        public ClientIDEventArgs(string ClientID)
-        {
-            this.ClientID = ClientID;
         }
     }
 }

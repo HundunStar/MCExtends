@@ -191,3 +191,5 @@ d:\用户目录\我的文档\visual studio 2015\Projects\MCExtendsServer\MCExten
 d:\用户目录\我的文档\visual studio 2015\Projects\MCExtendsServer\MCExtendsServer\obj\Debug\MCExtendsServer.exe.licenses
 d:\用户目录\我的文档\visual studio 2015\Projects\MCExtendsServer\MCExtendsServer\obj\Debug\MCExtendsServer.exe
 d:\用户目录\我的文档\visual studio 2015\Projects\MCExtendsServer\MCExtendsServer\obj\Debug\MCExtendsServer.pdb
+d:\用户目录\我的文档\visual studio 2015\Projects\MCExtendsServer\MCExtendsServer\bin\Debug\Newtonsoft.Json.dll
+d:\用户目录\我的文档\visual studio 2015\Projects\MCExtendsServer\MCExtendsServer\bin\Debug\Newtonsoft.Json.xml

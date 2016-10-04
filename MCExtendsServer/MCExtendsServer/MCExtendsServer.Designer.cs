@@ -44,7 +44,7 @@
             // 
             this.xtraTabControl1.Location = new System.Drawing.Point(15, 15);
             this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.ClientList;
+            this.xtraTabControl1.SelectedTabPage = this.XPConsole;
             this.xtraTabControl1.Size = new System.Drawing.Size(551, 436);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
@@ -91,6 +91,7 @@
             this.BtnStop.Size = new System.Drawing.Size(145, 60);
             this.BtnStop.TabIndex = 3;
             this.BtnStop.Text = "停止";
+            this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
             // MCExtendsServer
             // 
@@ -102,6 +103,8 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Name = "MCExtendsServer";
             this.Text = "MC扩展接单系统服务器";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MCExtendsServer_FormClosing);
+            this.Load += new System.EventHandler(this.MCExtendsServer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.XPConsole.ResumeLayout(false);
