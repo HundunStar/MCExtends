@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>MCExtends</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,31 +18,30 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<span class="logo"><img src="images/logo.png" alt="" /></span>
+						<h1>MCExtends</h1>
+						<p>专业MC软件众包平台</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">简介</a></li>
+							<li><a href="#first">流程</a></li>
+							<li><a href="#second">入驻</a></li>
+							<li><a href="#cta">监督</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
+						<!-- 简介 -->
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>简介</h2>
 										</header>
 										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
 										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
@@ -55,10 +54,10 @@
 								</div>
 							</section>
 
-						<!-- First Section -->
+						<!-- 流程 -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>流程</h2>
 								</header>
 								<ul class="features">
 									<li>
@@ -84,10 +83,10 @@
 								</footer>
 							</section>
 
-						<!-- Second Section -->
+						<!-- 入驻 -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
+									<h2>入驻</h2>
 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
 									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
 								</header>
@@ -121,10 +120,10 @@
 								</footer>
 							</section>
 
-						<!-- Get Started -->
+						<!-- 监督 -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
+									<h2>监督</h2>
 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
 									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
 								</header>
