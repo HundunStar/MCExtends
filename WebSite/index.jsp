@@ -29,7 +29,7 @@
 							<li><a href="#intro" class="active">简介</a></li>
 							<li><a href="#first">流程</a></li>
 							<li><a href="#second">入驻</a></li>
-							<li><a href="#cta">监督</a></li>
+							<li><a href="#cta">监管</a></li>
 						</ul>
 					</nav>
 
@@ -120,10 +120,10 @@
 								</footer>
 							</section>
 
-						<!-- 监督 -->
+						<!-- 监管 -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>监督</h2>
+									<h2>监管</h2>
 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
 									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
 								</header>
